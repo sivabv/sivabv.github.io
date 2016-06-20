@@ -1,7 +1,7 @@
 console.log('This would be the main JS file.');
 $(document).ready(function(){
 
-var url = 'http://jsfiddle.net/api/user/tycahill/demo/list.json?callback=?';
+var url = 'json/list.json?callback=?';
 
 // Get data from jsFiddle
 $.getJSON( url, function(data) {

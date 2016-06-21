@@ -280,7 +280,10 @@ section#main_content {
   padding: 20px 82px 0;
   min-height:185px;
 }
-
+main {
+    width: 800px;
+    margin:auto;
+}
 /* footer */
 
 footer {

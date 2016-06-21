@@ -10,7 +10,7 @@ $.getJSON( "json/list.json", function( data ) {
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
-  }).appendTo( "body" );
+  }).appendTo( "main" );
 });
            
 })

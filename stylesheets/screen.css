@@ -749,7 +749,8 @@ p.border{
 }
 
 .container--cell {
-    width: 47%;
+    width: 50%;
     height: 100%;
     float: left;
+    position:relative;
 }

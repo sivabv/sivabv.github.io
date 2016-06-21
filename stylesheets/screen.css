@@ -135,11 +135,12 @@ a#forkme_banner {
     /* transform: rotate(-45deg); */
     -webkit-transform: rotate(-45deg);
     background: red;
+    color:#fff;
 }
 }
 
 a#forkme_banner:hover {
-  /*background-position: 0 -138px;*/
+ text-decoration: none;
 }
 
 /* header */

@@ -149,10 +149,9 @@ a#forkme_banner:hover {
 
 header {
   position: relative;
-  z-index: 2;
   margin: 0 auto;
-  max-width: 600px;
-  top: 38px;
+  height: 100px;
+  padding-top: 25px;
 }
 
 header span.ribbon-inner {
@@ -186,15 +185,10 @@ header span.right-tail {
 }
 
 header h1 {
-  background-color: #7c334f;
   font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
-  text-transform: uppercase;
-  color: #ece4d8;
   text-align: center;
-  line-height:1;
-  padding: 14px 20px 0;
 }
 
 header h2 {
@@ -291,6 +285,7 @@ main {
 
 footer {
   text-align: center;
+  padding-top: 50px;
 }
 
 footer span.ribbon-outer {

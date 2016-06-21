@@ -136,6 +136,8 @@ a#forkme_banner {
     -webkit-transform: rotate(-45deg);
     background: red;
     color:#fff;
+    position: fixed;
+	
 }
 }
 

@@ -597,7 +597,7 @@ dd p:first-child {
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+	background:url(/images/planet.png) no-repeat center center;
 }
 
 .rocket{
@@ -606,7 +606,7 @@ dd p:first-child {
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 50px center;
+	background:url(/images/rocket.png) no-repeat 50px center;
 
 	/* Chrome still requires the -webkit- prefix */
 	-webkit-animation:orbit2 5s linear infinite;
@@ -668,7 +668,7 @@ p.border{
 
 .space{
 	/* Pass a comma separated list of backgrounds: */
-	background:url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket_big.png') no-repeat center 70px, url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/space.jpg') no-repeat bottom center;
+	background:url('/images/rocket_big.png') no-repeat center 70px, url('/images/space.jpg') no-repeat bottom center;
 	width:200px;
 	height:200px;
 	margin: 0 auto;
@@ -717,7 +717,7 @@ p.border{
 	left:50%;
 	margin:-166px 0 0 -100px;
 
-	background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/iphone.png) no-repeat left center;
+	background:url(/images/iphone.png) no-repeat left center;
 
 	/* Animate the transitions */
 	transition:0.8s;

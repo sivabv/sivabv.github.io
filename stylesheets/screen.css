@@ -660,7 +660,8 @@ p.border{
 	padding:20px;
 	width:200px;
 	margin: 0 auto;
-
+	margin-top:50px;
+	
 	/* Set the border and border image properties */
 	border:20px solid transparent;
 	border-image:url(/images/border.png) 30 30 round;

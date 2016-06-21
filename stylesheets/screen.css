@@ -125,13 +125,21 @@ a#forkme_banner {
   width: 138px;
   height: 138px;
   display: block;
-  background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;
-  text-indent: -9000px;
-  z-index: 3;
+  /*background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;*/
+  /*text-indent: -9000px;*/
+  /*z-index: 3;*/
+    margin-top: 25px;
+    left: -50px;
+    height: 27px;
+    padding: 10px 20px 5px 40px;
+    /* transform: rotate(-45deg); */
+    -webkit-transform: rotate(-45deg);
+    background: red;
+}
 }
 
 a#forkme_banner:hover {
-  background-position: 0 -138px;
+  /*background-position: 0 -138px;*/
 }
 
 /* header */

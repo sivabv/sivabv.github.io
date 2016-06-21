@@ -644,7 +644,7 @@ dd p:first-child {
     100% {left: 0px;    top: 200px;    background: red;transform:rotate(360deg);}
 }
 
-p{
+p.border{
 	text-align:center;
 	padding:20px;
 	width:200px;

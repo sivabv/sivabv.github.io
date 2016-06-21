@@ -743,3 +743,13 @@ p.border{
 	transform:rotateY(360deg);
 	-webkit-transform:rotateY(360deg);
 }
+
+.container--row {
+    height: 300px;
+}
+
+.container--cell {
+    width: 47%;
+    height: 100%;
+    float: left;
+}

@@ -652,7 +652,7 @@ p{
 
 	/* Set the border and border image properties */
 	border:10px solid transparent;
-	border-image:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;
+	border-image:url(/images/border.png) 30 30 round;
 }
 
 .space{

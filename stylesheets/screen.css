@@ -662,7 +662,7 @@ p.border{
 	margin: 0 auto;
 
 	/* Set the border and border image properties */
-	border:10px solid transparent;
+	border:20px solid transparent;
 	border-image:url(/images/border.png) 30 30 round;
 }
 

@@ -754,3 +754,7 @@ p.border{
     float: left;
     position:relative;
 }
+.container--cell .curve {
+    font-size: 30px;
+    text-align: center;
+}

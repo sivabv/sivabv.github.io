@@ -21,14 +21,7 @@ app.controller("myCtrl", function($scope) {
         $scope.errortext = "";
         $scope.products.splice(x, 1);
     }
-});
-function OrderFormController($scope){
-
-	// Define the model properties. The view will loop
-	// through the services array and genreate a li
-	// element for every one of its items.
-
-	$scope.services = [
+    	$scope.services = [
 		{
 			name: 'Web Development',
 			price: 300,
@@ -69,6 +62,15 @@ function OrderFormController($scope){
 
 		return total;
 	};
+});
+
+function OrderFormController($scope){
+
+	// Define the model properties. The view will loop
+	// through the services array and genreate a li
+	// element for every one of its items.
+
+
 }
 </script>
 <style>@import url(https://fonts.googleapis.com/css?family=Cookie);
@@ -174,8 +176,7 @@ div.total span{
     </div>
     <p class="w3-padding-left w3-text-red">{{errortext}}</p>
   </div>
-</div>
-<form ng-app ng-controller="OrderFormController">
+  <form>
 
 	<h1>Services</h1>
 
@@ -194,5 +195,7 @@ div.total span{
 	</div>
 
 </form>
+</div>
+
 </body>
 </html>

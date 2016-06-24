@@ -15,9 +15,19 @@
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <!--<script type="text/javascript" src="javascripts/functions.js"></script>-->
     <script type="text/javascript" src="javascripts/jquery.arctext.js"></script>
+    <script type="text/javascript" src="javascripts/instafeed.min.js"></script>
+
 
     <script type="text/javascript">
       $(document).ready(function () {
+        <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+</script>
         $('#main_content').headsmart()
         // console.log( "ready!" );
         $('#titre').arctext({
@@ -91,7 +101,7 @@
              <p class="border">Fancy border image!</p>
           </div>
         </div>
-
+<div id="instafeed"></div>
     </main>
     <footer>
       content above used/created for learning purpose only

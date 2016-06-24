@@ -640,15 +640,15 @@ dd p:first-child {
 }
  @keyframes mymove  {
     0%   {left: 0px;    top: 0px;transform:rotate(0deg);}
-    12%  {left: 0px;    top: 100px;    background: yellow; opacity: 0.5;transform:rotate(90deg); }
-    25%  {left: 100px;  top: 100px;     background: green;opacity: 1;transform:rotate(180deg);}
-    37%  {left: 100px;  top: 200px;     background: blue;opacity: 0.5;transform:rotate(270deg);}
-    50%  {left: 200px;    top: 200px;    background: red;transform:rotate(360deg);}
-    62%  {left: 200px;    top: 100px; width: 60px; height: 40px;   background: yellow; opacity: 0.5;transform:rotate(90deg); }
-    75%  {left: 300px;  top: 100px;    background: green;opacity: 1;transform:rotate(180deg);}
-    87%  {left: 300px;  top: 0px;     background: blue;opacity: 0.5;transform:rotate(270deg);}
-    87%  {left: 300px;  top: 0px;  width: 30px; height: 20px;    background: blue;opacity: 0.5;transform:rotate(270deg);}
-    100% {left: 0px;    top: 0px;    background: red;transform:rotate(360deg);}
+    12%  {left: 0px;    top: 100px;    background: #4dc3ff; opacity: 0.5;transform:rotate(90deg); }
+    25%  {left: 100px;  top: 100px;     background: #33bbff;opacity: 1;transform:rotate(180deg);}
+    37%  {left: 100px;  top: 200px;     background:  #00aaff;opacity: 0.5;transform:rotate(270deg);}
+    50%  {left: 200px;    top: 200px;    background:  #0088cc;transform:rotate(360deg);}
+    62%  {left: 200px;    top: 100px; width: 60px; height: 40px;   background: #00aaff; opacity: 0.5;transform:rotate(90deg); }
+    75%  {left: 300px;  top: 100px;    background: #33bbff;opacity: 1;transform:rotate(180deg);}
+    87%  {left: 300px;  top: 0px;     background: #4dc3ff;opacity: 0.5;transform:rotate(270deg);}
+    87%  {left: 300px;  top: 0px;  width: 30px; height: 20px;    background:  #66ccff;opacity: 0.5;transform:rotate(270deg);}
+    100% {left: 0px;    top: 0px;    background: #66ccff;transform:rotate(360deg);}
 }
 
 p.border{

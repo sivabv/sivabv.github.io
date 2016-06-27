@@ -1,7 +1,7 @@
 {
     "glossaryitems": [
       {     "tagItem": "A",
-            "tagItemlist": [  {
+            "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",
@@ -24,7 +24,7 @@
             }]
         }, 
         {   "tagItem": "B",
-            "tagItemlist": [  {
+            "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",
@@ -47,12 +47,12 @@
             }]
         },
                 {   "tagItem": "C",
-            "tagItemlist": [  {
+            "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",
 
-            },    {
+            }, {
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",
@@ -70,12 +70,12 @@
             }]
         },
                 {   "tagItem": "D",
-            "tagItemlist": [  {
+            "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",
 
-            },    {
+            }, {
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
                 "glossaryItemDescription": "Doe glossary Item Description",

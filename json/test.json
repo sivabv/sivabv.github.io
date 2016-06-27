@@ -4,22 +4,22 @@
             "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             }]
         }, 
@@ -27,45 +27,44 @@
             "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
-
+                "glossaryItemDescription": "Doe glossary Item Description"
             }]
         },
                 {   "tagItem": "C",
             "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             }, {
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             }]
         },
@@ -73,23 +72,22 @@
             "tagItemlist": [{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             }, {
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
+                "glossaryItemDescription": "Doe glossary Item Description"
 
             },{
                 "glossaryItemID": "linkied-Id",
                 "glossaryItem": "Doe",
-                "glossaryItemDescription": "Doe glossary Item Description",
-
+                "glossaryItemDescription": "Doe glossary Item Description"
             }]
         }
 

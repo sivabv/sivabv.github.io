@@ -895,6 +895,9 @@ p::first-line{
 }
 
 .cube > div {
+	font-size:100px;
+	text-align:center;
+	vertical-align:middle;
   position: absolute;
   height: 200px;
   width: 200px;

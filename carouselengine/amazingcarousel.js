@@ -3302,7 +3302,7 @@ var ACPlatforms = {
                 versionmark: "AMFree",
                 showwdefault: true,
                 wstyledefault: "text",
-                wtextdefault: "73,69,76,61,62,76,  6c,65,61,72,6e,69,6e,67",
+                wtextdefault: "",
                 wimagedefault: "",
                 wposcss: "display:block;position:absolute;bottom:6px;right:6px;",
                 wtextcssdefault: "font:12px Arial,Tahoma,Helvetica,sans-serif;color:#666;padding:2px 4px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);",

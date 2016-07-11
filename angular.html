@@ -5,7 +5,7 @@
 <body>
 
 <script>
-var app = angular.module("myShoppingList", []);
+var app = angular.module("myShoppingList", [ 'ui.bootstrap']);
 app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
     $scope.addItem = function () {
@@ -71,6 +71,23 @@ function OrderFormController($scope){
 	// element for every one of its items.
 
 
+}
+function CarouselDemoCtrl($scope){
+  $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: 'http://lorempixel.com/400/200/'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/food'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/sports'
+    },
+    {
+      image: 'http://lorempixel.com/400/200/people'
+    }
+  ];
 }
 </script>
 <style>@import url(https://fonts.googleapis.com/css?family=Cookie);
@@ -167,45 +184,43 @@ div.total span{
         <input type="hidden" name="qp" value="">
         <input type="hidden" name="qs" value="">
         <input type="hidden" name="qc" value="">
-</form>
-  <header class="w3-container w3-light-grey w3-padding-hor-16">
-    <h3>My Shopping List</h3>
-  </header>
-  <ul class="w3-ul">
-    <li ng-repeat="x in products" class="w3-padding-hor-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
-  </ul>
-  <div class="w3-container w3-light-grey w3-padding-hor-16">
-    <div class="w3-row w3-margin-top">
-      <div class="w3-col s10">
-        <input placeholder="Add shopping items here" ng-model="addMe" class="w3-input w3-border w3-padding">
-      </div>
-      <div class="w3-col s2">
-        <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add</button>
-      </div>
-    </div>
-    <p class="w3-padding-left w3-text-red">{{errortext}}</p>
-  </div>
-  <form>
+	</form>
+	  <header class="w3-container w3-light-grey w3-padding-hor-16">
+	    <h3>My Shopping List</h3>
+	  </header>
+	  <ul class="w3-ul">
+	    <li ng-repeat="x in products" class="w3-padding-hor-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+	  </ul>
+	  <div class="w3-container w3-light-grey w3-padding-hor-16">
+	    <div class="w3-row w3-margin-top">
+	      <div class="w3-col s10">
+	        <input placeholder="Add shopping items here" ng-model="addMe" class="w3-input w3-border w3-padding">
+	      </div>
+	      <div class="w3-col s2">
+	        <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add</button>
+	      </div>
+	    </div>
+	    <p class="w3-padding-left w3-text-red">{{errortext}}</p>
+	  </div>
+	  <form>
 
-	<h1>Services</h1>
+		<h1>Services</h1>
 
-	<ul>
-		<!-- Loop through the services array, assign a click handler, and set or
-			remove the "active" css class if needed -->
-		<li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
-			<!-- Notice the use of the currency filter, it will format the price -->
-			{{service.name}} <span>{{service.price | currency}}</span>
-		</li>
-	</ul>
+		<ul>
+			<!-- Loop through the services array, assign a click handler, and set or
+				remove the "active" css class if needed -->
+			<li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
+				<!-- Notice the use of the currency filter, it will format the price -->
+				{{service.name}} <span>{{service.price | currency}}</span>
+			</li>
+		</ul>
 
-	<div class="total">
-		<!-- Calculate the total price of all chosen services. Format it as currency. -->
-		Total: <span>{{total() | currency}}</span>
-	</div>
+		<div class="total">
+			<!-- Calculate the total price of all chosen services. Format it as currency. -->
+			Total: <span>{{total() | currency}}</span>
+		</div>
 
-</form>
-</div>
-<div ng-app="app">
+	</form>
   <div ng-controller="CarouselDemoCtrl" id="slides_control">
     <div>
       <carousel interval="myInterval">

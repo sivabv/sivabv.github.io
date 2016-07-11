@@ -954,3 +954,45 @@ img{
   top:20px;
  margin-left:-200px;
 }
+
+@media only screen and (min-width : 321px) {
+/* Styles */
+
+main {
+    width: 100%;
+}
+
+.container--cell {
+    width: 100%;
+}
+
+.rocket {
+    width: 90%;
+}
+
+header {
+    height: 200px;
+}
+}
+
+@media only screen and (max-width : 480px) {
+/* Styles */
+
+main {
+    width: 100%;
+}
+
+.container--cell {
+    width: 100%;
+}
+
+.rocket {
+    width: 90%;
+}
+
+header {
+    height: 200px;
+}
+}
+
+

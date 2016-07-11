@@ -3302,7 +3302,7 @@ var ACPlatforms = {
                 versionmark: "AMFree",
                 showwdefault: true,
                 wstyledefault: "text",
-                wtextdefault: "65,109,97,122,105,110,103,32,67,97,114,111,117,115,101,108,32,70,114,101,101,32,86,101,114,115,105,111,110",
+                wtextdefault: "Siva's learning",
                 wimagedefault: "",
                 wposcss: "display:block;position:absolute;bottom:6px;right:6px;",
                 wtextcssdefault: "font:12px Arial,Tahoma,Helvetica,sans-serif;color:#666;padding:2px 4px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background-color:#fff;opacity:0.9;filter:alpha(opacity=90);",

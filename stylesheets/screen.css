@@ -955,25 +955,6 @@ img{
  margin-left:-200px;
 }
 
-@media only screen and (min-width : 321px) {
-/* Styles */
-
-main {
-    width: 100%;
-}
-
-.container--cell {
-    width: 100%;
-}
-
-.rocket {
-    width: 90%;
-}
-
-header {
-    height: 200px;
-}
-}
 
 @media only screen and (min-device-width : 240px) and (max-device-width : 480px) {
 /* Styles */

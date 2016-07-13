@@ -593,7 +593,7 @@ dd p:first-child {
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(/images/planet.png) no-repeat center center;
+	background:url(../images/planet.png) no-repeat center center;
 }
 
 .rocket{
@@ -602,7 +602,7 @@ dd p:first-child {
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(/images/rocket.png) no-repeat 50px center;
+	background:url(../images/rocket.png) no-repeat 50px center;
 
 	/* Chrome still requires the -webkit- prefix */
 	-webkit-animation:orbit2 5s linear infinite;
@@ -660,12 +660,12 @@ p.border{
 	
 	/* Set the border and border image properties */
 	border:20px solid transparent;
-	border-image:url(/images/border.png) 30 30 round;
+	border-image:url(../images/border.png) 30 30 round;
 }
 
 .space{
 	/* Pass a comma separated list of backgrounds: */
-	background:url('/images/rocket_big.png') no-repeat center center, url('/images/space.jpg') no-repeat center center;
+	background:url('../images/rocket_big.png') no-repeat center center, url('../images/space.jpg') no-repeat center center;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -704,7 +704,7 @@ p.border{
 	left:50%;
 	margin:-166px 0 0 -100px;
 
-	background:url(/images/iphone.png) no-repeat left center;
+	background:url(../images/iphone.png) no-repeat left center;
 
 	/* Animate the transitions */
 	transition:0.8s;
@@ -855,7 +855,7 @@ p::first-line{
 }
     .color__background 
     {
-    background: url(/images/css.png);
+    background: url(../images/css.png);
     background-size: 80% 100%;
     background-repeat: no-repeat;
     background-position: 50px 33px;

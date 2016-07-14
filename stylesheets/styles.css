@@ -1,4 +1,21 @@
 ﻿
+
+
+td { padding: 0.2em 1em; }
+th { text-align: center; }
+thead {
+    border-bottom: 2px solid black; 
+    cursor: pointer;  
+}
+
+/* http://www.greywyvern.com/code/php/binary2base64 */
+
+.sort-true {
+     background:no-repeat right center url('../images/down.gif');}
+.sort-false {
+    background:no-repeat right center url('../images/up.gif');}
+
+
         @import url(https://fonts.googleapis.com/css?family=Cookie);
         * {
             margin: 0;

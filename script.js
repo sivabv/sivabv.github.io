@@ -41,7 +41,42 @@
             $scope.toggleActive = function(s) {
                 s.active = !s.active;
             };
+    $scope.head = [
+        {head: "Name", column: "name"},
+        {head: "Surname", column: "surname"},
+        {head: "City", column: "city"}];
+    $scope.body = [{
+       "name": "Hans",
+        "surname": "Mueller",
+        "city": "Leipzig"
+    }, {
+        "name": "Dieter",
+        "surname": "Zumpe",
+        "city": "Berlin"
+    }, {
+        "name": "Bernd",
+        "surname": "Danau",
+       "city": "Muenchen"
+    }];
+    
+    $scope.sort = {
+        column: 'name',
+        descending: false
+    };
 
+    $scope.selectedCls = function(column) {
+        return column == $scope.sort.column && 'sort-' + $scope.sort.descending;
+    };
+    
+    $scope.changeSorting = function(column) {
+        var sort = $scope.sort;
+        if (sort.column == column) {
+            sort.descending = !sort.descending;
+        } else {
+            sort.column = column;
+            sort.descending = false;
+        }
+    };
             // Helper method for calculating the total price
 
             $scope.total = function() {
@@ -63,11 +98,6 @@
 
         function OrderFormController($scope) {
 
-            // Define the model properties. The view will loop
-            // through the services array and genreate a li
-            // element for every one of its items.
-
-
         }
 
 
@@ -86,3 +116,4 @@
 		        templateUrl : "blue.htm"
 		    });
 		});
+

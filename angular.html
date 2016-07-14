@@ -23,11 +23,25 @@
         </script>
         <script type="text/ng-template" id="red.htm">
             <h1> Red </h1>
-            <form action="https://sivabv.github.io/" method="get" id="theform" name="theform" novalidate="">
+<!--             <form action="https://sivabv.github.io/" method="get" id="theform" name="theform" novalidate="">
                 <input type="text" name="qt" id="gsrchinput" placeholder="Search" required="required" class="placeholder">
                 <input type="submit" value="G" name="search-btn" class="button button2 demo-icon">
 
-            </form>
+            </form> -->
+                	<table >
+		    <thead>
+		        <tr>
+		            <th ng:repeat="th in head" ng:class="selectedCls(th.column)" ng:click="changeSorting(th.column)">{{th.head}}</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr ng:repeat="row in body  | orderBy:sort.column:sort.descending">
+		            <td>{{row.name}}</td>
+		            <td>{{row.surname}}</td>
+		            <td>{{row.city}}</td> 
+		        </tr>
+		    </tbody>
+		</table>
         </script>
         <script type="text/ng-template" id="green.htm">
             <h1> Green </h1>
@@ -77,6 +91,7 @@
         </script>
 
     </div>
+
 </body>
 
 </html>

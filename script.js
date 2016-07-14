@@ -1,6 +1,86 @@
-$(document).ready(function(){
-	/* This code is executed after the DOM has been completely loaded */
 
-	$('#fancyClock').tzineClock();
 
-});
+        var app = angular.module("myShoppingList", ['ui.bootstrap','ngRoute']);
+        app.controller("myCtrl", function($scope) {
+            $scope.products = ["Milk", "Bread", "Cheese"];
+            $scope.addItem = function() {
+                $scope.errortext = "";
+                if (!$scope.addMe) {
+                    return;
+                }
+                if ($scope.products.indexOf($scope.addMe) == -1) {
+                    $scope.products.push($scope.addMe);
+                } else {
+                    $scope.errortext = "The item is already in your shopping list.";
+                }
+            }
+            $scope.removeItem = function(x) {
+                $scope.errortext = "";
+                $scope.products.splice(x, 1);
+            }
+            $scope.services = [{
+                name: 'Web Development',
+                price: 300,
+                active: true
+            }, {
+                name: 'Design',
+                price: 400,
+                active: false
+            }, {
+                name: 'Integration',
+                price: 250,
+                active: false
+            }, {
+                name: 'Training',
+                price: 220,
+                active: false
+            }];
+
+            $scope.toggleActive = function(s) {
+                s.active = !s.active;
+            };
+
+            // Helper method for calculating the total price
+
+            $scope.total = function() {
+
+                var total = 0;
+
+                // Use the angular forEach helper method to
+                // loop through the services array:
+
+                angular.forEach($scope.services, function(s) {
+                    if (s.active) {
+                        total += s.price;
+                    }
+                });
+
+                return total;
+            };
+        });
+
+        function OrderFormController($scope) {
+
+            // Define the model properties. The view will loop
+            // through the services array and genreate a li
+            // element for every one of its items.
+
+
+        }
+
+
+        app.config(function($routeProvider) {
+		    $routeProvider
+		    .when("/", {
+		        templateUrl : "main.htm"
+		    })
+		    .when("/red", {
+		        templateUrl : "red.htm"
+		    })
+		    .when("/green", {
+		        templateUrl : "green.htm"
+		    })
+		    .when("/blue", {
+		        templateUrl : "blue.htm"
+		    });
+		});

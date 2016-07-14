@@ -3,21 +3,23 @@
         var app = angular.module("myShoppingList", ['ui.bootstrap','ngRoute']);
         app.controller("myCtrl", function($scope) {
             $scope.products = ["Milk", "Bread", "Cheese"];
+          	$scope.formData = {};
             $scope.addItem = function() {
                 $scope.errortext = "";
-                if (!$scope.addMe) {
+                   	console.log($scope.formData.addMe);
+                if (!$scope.formData.addMe) {
                     return;
                 }
-                if ($scope.products.indexOf($scope.addMe) == -1) {
-                    $scope.products.push($scope.addMe);
+                if ($scope.products.indexOf($scope.formData.addMe) == -1) {
+                    $scope.products.push($scope.formData.addMe);
                 } else {
                     $scope.errortext = "The item is already in your shopping list.";
                 }
-            }
+            };
             $scope.removeItem = function(x) {
                 $scope.errortext = "";
                 $scope.products.splice(x, 1);
-            }
+            };
             $scope.services = [{
                 name: 'Web Development',
                 price: 300,

@@ -26,11 +26,7 @@
             <form action="https://sivabv.github.io/" method="get" id="theform" name="theform" novalidate="">
                 <input type="text" name="qt" id="gsrchinput" placeholder="Search" required="required" class="placeholder">
                 <input type="submit" value="G" name="search-btn" class="button button2 demo-icon">
-                <input type="hidden" name="rq" value="0">
-                <input type="hidden" name="col" id="col" value="prod">
-                <input type="hidden" name="qp" value="">
-                <input type="hidden" name="qs" value="">
-                <input type="hidden" name="qc" value="">
+
             </form>
         </script>
         <script type="text/ng-template" id="green.htm">
@@ -59,11 +55,18 @@
             </form>
         </script>
         <script type="text/ng-template" id="blue.htm">
-            <h1> Blue </h1>
+             <header class="w3-container w3-light-grey w3-padding-hor-16">
+			    <h3>My Shopping List</h3>
+			  </header>
             <div class="w3-container w3-light-grey w3-padding-hor-16">
+              
+				    <ul class="w3-ul">
+						    <li ng-repeat="x in products" class="w3-padding-hor-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+				    </ul>
+				
                 <div class="w3-row w3-margin-top">
                     <div class="w3-col s10">
-                        <input placeholder="Add shopping items here" ng-model="addMe" class="w3-input w3-border w3-padding">
+                        <input placeholder="Add shopping items here" ng-model="formData.addMe" class="w3-input w3-border w3-padding">
                     </div>
                     <div class="w3-col s2">
                         <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add</button>

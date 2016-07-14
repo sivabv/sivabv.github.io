@@ -13,38 +13,33 @@
     <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin">
         <p><a href="#/">Main</a></p>
 
-        <a href="#red">Red</a>
-        <a href="#green">Green</a>
-        <a href="#blue">Blue</a>
+        <a href="#Angular-Sorting">Angular Sorting</a>
+        <a href="#To-Do-list">To Do list</a>
+        <a href="#My-Shopping-List">My Shopping List</a>
 
         <div ng-view></div>
         <script type="text/ng-template" id="main.htm">
             <h1> Main </h1>
         </script>
-        <script type="text/ng-template" id="red.htm">
-            <h1> Red </h1>
-<!--             <form action="https://sivabv.github.io/" method="get" id="theform" name="theform" novalidate="">
-                <input type="text" name="qt" id="gsrchinput" placeholder="Search" required="required" class="placeholder">
-                <input type="submit" value="G" name="search-btn" class="button button2 demo-icon">
-
-            </form> -->
-                	<table >
-		    <thead>
-		        <tr>
-		            <th ng:repeat="th in head" ng:class="selectedCls(th.column)" ng:click="changeSorting(th.column)">{{th.head}}</th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		        <tr ng:repeat="row in body  | orderBy:sort.column:sort.descending">
-		            <td>{{row.name}}</td>
-		            <td>{{row.surname}}</td>
-		            <td>{{row.city}}</td> 
-		        </tr>
-		    </tbody>
-		</table>
+        <script type="text/ng-template" id="Angular-Sorting.htm">
+            <h1> Sorting Example </h1>
+	        <table >
+			    <thead>
+			        <tr>
+			            <th ng:repeat="th in head" ng:class="selectedCls(th.column)" ng:click="changeSorting(th.column)">{{th.head}}</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr ng:repeat="row in body  | orderBy:sort.column:sort.descending">
+			            <td>{{row.name}}</td>
+			            <td>{{row.surname}}</td>
+			            <td>{{row.city}}</td> 
+			        </tr>
+			    </tbody>
+			</table>
         </script>
-        <script type="text/ng-template" id="green.htm">
-            <h1> Green </h1>
+        <script type="text/ng-template" id="My-Shopping-List.htm">
+            <h1> My-Shopping-List </h1>
             <header class="w3-container w3-light-grey w3-padding-hor-16">
                 <h3>My Shopping List</h3>
             </header>
@@ -68,26 +63,25 @@
 
             </form>
         </script>
-        <script type="text/ng-template" id="blue.htm">
-             <header class="w3-container w3-light-grey w3-padding-hor-16">
-			    <h3>My Shopping List</h3>
+        <script type="text/ng-template" id="To-Do-list.htm">
+              <header class="w3-container w3-light-grey w3-padding-hor-16">
+			    <h3>To Do List</h3>
 			  </header>
-            <div class="w3-container w3-light-grey w3-padding-hor-16">
-              
-				    <ul class="w3-ul">
-						    <li ng-repeat="x in products" class="w3-padding-hor-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
-				    </ul>
-				
-                <div class="w3-row w3-margin-top">
-                    <div class="w3-col s10">
-                        <input placeholder="Add shopping items here" ng-model="formData.addMe" class="w3-input w3-border w3-padding">
-                    </div>
-                    <div class="w3-col s2">
-                        <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add</button>
-                    </div>
-                </div>
-                <p class="w3-padding-left w3-text-red">{{errortext}}</p>
-            </div>
+	            <div class="w3-container w3-light-grey w3-padding-hor-16">
+	              
+					    <ul class="w3-ul">
+							    <li ng-repeat="x in products" class="w3-padding-hor-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+					    </ul>
+				    <div class="w3-row w3-margin-top">
+	                    <div class="w3-col s10">
+	                        <input placeholder="Add shopping items here" ng-model="formData.addMe" class="w3-input w3-border w3-padding">
+	                    </div>
+	                    <div class="w3-col s2">
+	                        <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add</button>
+	                    </div>
+	                </div>
+	                <p class="w3-padding-left w3-text-red">{{errortext}}</p>
+	            </div>
         </script>
 
     </div>

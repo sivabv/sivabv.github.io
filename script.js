@@ -46,17 +46,41 @@
         {head: "Surname", column: "surname"},
         {head: "City", column: "city"}];
     $scope.body = [{
-       "name": "Hans",
-        "surname": "Mueller",
-        "city": "Leipzig"
+       "name": "Ians",
+        "surname": "Kueller",
+        "city": "Zeipzig"
     }, {
         "name": "Dieter",
-        "surname": "Zumpe",
-        "city": "Berlin"
+        "surname": "Lumpe",
+        "city": "Yerlin"
+    },
+    {
+       "name": "Bans",
+        "surname": "Mueller",
+        "city": "Xeipzig"
     }, {
-        "name": "Bernd",
-        "surname": "Danau",
-       "city": "Muenchen"
+        "name": "Aieter",
+        "surname": "Numpe",
+        "city": "Werlin"
+    },
+     {
+        "name": "Cieter",
+        "surname": "Oumpe",
+        "city": "Verlin"
+    },
+    {
+       "name": "Eans",
+        "surname": "Pueller",
+        "city": "Ueipzig"
+    }, {
+        "name": "Fieter",
+        "surname": "Qumpe",
+        "city": "Terlin"
+    },
+     {
+        "name": "Gernd",
+        "surname": "Ranau",
+       "city": "Suenchen"
     }];
     
     $scope.sort = {
@@ -106,14 +130,14 @@
 		    .when("/", {
 		        templateUrl : "main.htm"
 		    })
-		    .when("/red", {
-		        templateUrl : "red.htm"
+		    .when("/Angular-Sorting", {
+		        templateUrl : "Angular-Sorting.htm"
 		    })
-		    .when("/green", {
-		        templateUrl : "green.htm"
+		    .when("/To-Do-list", {
+		        templateUrl : "To-Do-list.htm"
 		    })
-		    .when("/blue", {
-		        templateUrl : "blue.htm"
+		    .when("/My-Shopping-List", {
+		        templateUrl : "My-Shopping-List.htm"
 		    });
 		});
 

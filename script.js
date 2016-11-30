@@ -148,6 +148,9 @@ app.config(function($routeProvider) {
         .when("/Angular-Sorting", {
             templateUrl: "Angular-Sorting.htm"
         })
+	 .when("/Angular-Carousel", {
+            templateUrl: "Angular-Carousel.htm"
+        })
         .when("/To-Do-list", {
             templateUrl: "To-Do-list.htm"
         })

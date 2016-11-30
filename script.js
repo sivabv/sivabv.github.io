@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @sivabv
+ Unwatch 1
+  Star 0
+  Fork 0 sivabv/sivabv.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathsivabv.github.io/script.js
+c8a5fcc  4 minutes ago
+@sivabv sivabv Update script.js
+1 contributor
+RawBlameHistory     
+161 lines (149 sloc)  3.78 KB
 var app = angular.module("learningApp", ['ui.bootstrap', 'ngRoute']);
 app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
@@ -129,8 +146,24 @@ app.controller("myCtrl", function($scope) {
       content: "Dynamic Group Body - 2",
       open: false
     }
-  ];
-  
+   ];
+  $scope.CarouselDemoCtrl = function() {
+          $scope.myInterval = 3000;
+          $scope.slides = [
+            {
+              image: 'images/download.jpg'
+            },
+            {
+              image: 'images/food.jpg'
+            },
+            {
+              image: 'images/sports.jpg'
+            },
+            {
+              image: 'images/people.jpg'
+            }
+          ];
+  };
   $scope.addNew = function() {
     $scope.groups.push({
       title: "New One Created",
@@ -158,3 +191,5 @@ app.config(function($routeProvider) {
             templateUrl: "My-Shopping-List.htm"
         });
 });
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help

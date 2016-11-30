@@ -147,7 +147,7 @@ app.controller("myCtrl", function($scope) {
       open: false
     }
    ];
-  $scope.CarouselDemoCtrl = function() {
+ 
           $scope.myInterval = 3000;
           $scope.slides = [
             {
@@ -163,7 +163,7 @@ app.controller("myCtrl", function($scope) {
               image: 'images/people.jpg'
             }
           ];
-  };
+
   $scope.addNew = function() {
     $scope.groups.push({
       title: "New One Created",

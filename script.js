@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @sivabv
- Unwatch 1
-  Star 0
-  Fork 0 sivabv/sivabv.github.io
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathsivabv.github.io/script.js
-c8a5fcc  4 minutes ago
-@sivabv sivabv Update script.js
-1 contributor
-RawBlameHistory     
-161 lines (149 sloc)  3.78 KB
 var app = angular.module("learningApp", ['ui.bootstrap', 'ngRoute']);
 app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
@@ -147,7 +130,6 @@ app.controller("myCtrl", function($scope) {
       open: false
     }
   ];
-
   
   $scope.addNew = function() {
     $scope.groups.push({
@@ -166,7 +148,7 @@ app.config(function($routeProvider) {
         .when("/Angular-Sorting", {
             templateUrl: "Angular-Sorting.htm"
         })
-	 .when("/Angular-Carousel", {
+	    .when("/Angular-Carousel", {
             templateUrl: "Angular-Carousel.htm"
         })
         .when("/To-Do-list", {
@@ -176,5 +158,3 @@ app.config(function($routeProvider) {
             templateUrl: "My-Shopping-List.htm"
         });
 });
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help

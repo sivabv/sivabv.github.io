@@ -17,6 +17,7 @@
         <a href="#Angular-Sorting">Angular Sorting</a>
         <a href="#To-Do-list">To Do list</a>
         <a href="#My-Shopping-List">My Shopping List</a>
+        <a href="#Angular-Carousel">Angular Carousel</a>
 
         <div ng-view class="ng-scope"></div>
         <script type="text/ng-template" id="main.htm">
@@ -98,9 +99,57 @@
 	                <p class="w3-padding-left w3-text-red">{{errortext}}</p>
 	            </div>
         </script>
+        <script type="text/ng-template" id="Angular-Carousel.htm">
+
+			  <div id="slides_control">
+			    <div>
+			      <carousel interval="myInterval">
+			        <slide ng-repeat="slide in slides" active="slide.active">
+			          <img ng-src="{{slide.image}}">
+			          <div class="carousel-caption">
+			            <h4>Slide {{$index+1}}</h4>
+			          </div>
+			        </slide>
+			      </carousel>
+			    </div>
+			  </div>
+			// <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		</script>
+<script type="text/javascript">  angular.module('learningApp', ['ui.bootstrap']);
+function CarouselDemoCtrl($scope){
+  $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: 'images/download.jpg'
+    },
+    {
+      image: 'images/food.jpg'
+    },
+    {
+      image: 'images/sports.jpg'
+    },
+    {
+      image: 'images/people.jpg'
+    }
+  ];
+}</script>
+        </script>
 
     </div>
-
+ <style type="text/css">#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}</style>
 </body>
 
 </html>

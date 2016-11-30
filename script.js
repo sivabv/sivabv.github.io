@@ -147,21 +147,7 @@ app.controller("myCtrl", function($scope) {
       open: false
     }
   ];
-  $scope.myInterval = 3000;
-  $scope.slides = [
-    {
-      image: 'images/download.jpg'
-    },
-    {
-      image: 'images/food.jpg'
-    },
-    {
-      image: 'images/sports.jpg'
-    },
-    {
-      image: 'images/people.jpg'
-    }
-  ];
+
   
   $scope.addNew = function() {
     $scope.groups.push({

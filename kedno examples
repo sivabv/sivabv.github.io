@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/styles/kendo.common.min.css"></script>
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/styles/kendo.dataviz.min.css"></script>
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/js/kendo.all.min.js"></script>
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/styles/kendo.flat.min.css"></script>
+    <script type="text/javascript" src="http://cdn.kendostatic.com/2015.1.318/styles/kendo.dataviz.flat.min.css"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+   
+        $('#main_content').headsmart()
+        // console.log( "ready!" );
+        $('#titre').arctext({
+            radius: 100,
+          
+        });
+        $('#titre2').arctext({
+            radius: 100,
+              dir:-1
+        });
+    }); 
+                        $("#grid").kendoGrid({
+                        dataSource: {
+                            type: "odata",
+                            transport: {
+                                read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                            },
+                            pageSize: 50
+                        },
+                        height: 850,
+                        groupable: false,
+                        sortable: true,
+                        pageable: {
+                            refresh: true,
+                            pageSizes: true,
+                            buttonCount: 15
+                        },
+                        columns: [{
+                            field: "ContactName",
+                            title: "Contact Name",
+                            width: 200
+                        }, {
+                            field: "ContactTitle",
+                            title: "Contact Title"
+                        }, {
+                            field: "CompanyName",
+                            title: "Company Name"
+                        }, {
+                            field: "Country",
+                            width: 150
+                        }]
+                    });
+                });
+    </script>
+    <title>Siva Kumar</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/sivabv">View on GitHub</a>
+    <header>
+     <h1>Learning curve</h1>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/angular">Angular Functionalities 1</a></li>
+            <li><a href="/routes">Simple Routes</a></li> 
+            <li><a href="/drag-drop">Jquery Drag-Drop</a></li> 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+<h1> Kendo grid, basic example</h1>
+
+<div id="example">
+            <div id="grid"></div>
+ </div>
+     </main>
+    <footer>
+      content above used/created for learning purpose only
+    </footer>
+  </body>
+</html>

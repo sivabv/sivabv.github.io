@@ -146,24 +146,23 @@ app.controller("myCtrl", function($scope) {
       content: "Dynamic Group Body - 2",
       open: false
     }
-   ];
- 
-          $scope.myInterval = 3000;
-          $scope.slides = [
-            {
-              image: 'images/download.jpg'
-            },
-            {
-              image: 'images/food.jpg'
-            },
-            {
-              image: 'images/sports.jpg'
-            },
-            {
-              image: 'images/people.jpg'
-            }
-          ];
-
+  ];
+  $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: 'images/download.jpg'
+    },
+    {
+      image: 'images/food.jpg'
+    },
+    {
+      image: 'images/sports.jpg'
+    },
+    {
+      image: 'images/people.jpg'
+    }
+  ];
+  
   $scope.addNew = function() {
     $scope.groups.push({
       title: "New One Created",

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate",function(){
+  $("#pageone1 p").on("tap",function(){
+    $(this).hide();
+  });  
+    $("#pageone2 p").on("taphold",function(){
+    $(this).hide();
+  });
+   $("#pageone3 p").on("swipe",function(){
+    $("span").text("Swipe detected!");
+  });  
+   $("#pageone4").on("swiperight",function(){
+    alert("You swiped right!");
+  });
+});
+</script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>The tap Event</h1>
+  </div>
+
+  <div data-role="main" class="ui-content"  id="pageone1">
+    <p>If you tap me, I will disappear.</p>
+    <p>Tap me away!</p>
+    <p>Tap me too!</p>
+  </div>
+
+  <div data-role="header">
+    <h1>The taphold Event</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" id="pageone2">
+    <p>If you tap and hold me for one second, I will disappear.</p>
+    <p>Tap and hold me!</p>
+    <p>Tap and hold me too!</p>
+  </div>
+  <div data-role="header">
+    <h1>The swipe Event</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" id="pageone3">
+    <p>Swipe this text or in the box below.</p>
+    <p style="border:1px solid black;height:200px;width:200px;"></p>
+    <p><span style="color:red"></span></p>
+  </div>
+ <div data-role="header" >
+    <h1>The swiperight Event</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" id="pageone4">
+    <p style="border:1px solid black;margin:5px;">Swipe me in the right direction - do not swipe outside the border!</p>  
+  </div>
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title>Move to Click Position</title>
+<style type="text/css">
+body {
+    background-color: #FFF;
+    margin: 0px;
+}
+#contentContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    height: 800px;
+
+}
+#thing {
+    position: relative;
+    transition: left .5s ease-in, top .5s ease-in;
+}
+.bg{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: red;
+}
+</style>
+</head>
+ 
+<body>
+<div id="contentContainer">
+    
+    <img id="thing" src="./8c6LAa79i.jpg" style="width:40px; height:40px">
+    <!-- <div id="thing" class="bg"></div> -->
+
+</div>
+ 
+<!-- <script src="//www.kirupa.com/prefixfree.min.js"></script> -->
+<script>
+var theThing = document.querySelector("#thing");
+var container = document.querySelector("#contentContainer");
+ 
+container.addEventListener("click", getClickPosition, false);
+ 
+function getClickPosition(e) {
+    console.log(theThing.style.left +"  "+theThing.style.top);
+
+    theThing.style.display = 'none';
+    var parentPosition = getPosition(e.currentTarget);
+    var xPosition = e.clientX - parentPosition.x - (theThing.clientWidth / 2)-10;
+    var yPosition = e.clientY - parentPosition.y - (theThing.clientHeight / 2)-10;
+
+   console.log(xPosition + "  "+ yPosition);
+
+    theThing.style.left = xPosition + "px";
+    theThing.style.top = yPosition + "px";
+    theThing.style.display = 'block';
+}
+ 
+// Helper function to get an element's exact position
+function getPosition(el) {
+  var xPos = 0;
+  var yPos = 0;
+ 
+  while (el) {
+    if (el.tagName == "BODY") {
+      // deal with browser quirks with body/window/document and page scroll
+      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+      var yScroll = el.scrollTop || document.documentElement.scrollTop;
+ 
+      xPos += (el.offsetLeft - xScroll + el.clientLeft);
+      yPos += (el.offsetTop - yScroll + el.clientTop);
+    } else {
+      // for all other non-BODY elements
+      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+    }
+ 
+    el = el.offsetParent;
+  }
+  return {
+    x: xPos,
+    y: yPos
+  };
+}
+</script>
+</body>
+</html>

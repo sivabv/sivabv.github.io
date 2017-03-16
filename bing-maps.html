@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type='text/javascript' src='//www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+
+    <script type='text/javascript'>
+    var map, searchManager;
+
+    function GetMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'AvDO5RzvONN2JYze5a-y3_8LOVJxBb4sanU-dRYZKQvwDmQ7QOAddt4eoXZdnNJ4'
+        });
+    }
+
+    function Search() {
+        if (!searchManager) {
+            //Create an instance of the search manager and perform the search.
+            Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                Search()
+            });
+        } else {
+            //Remove any previous results from the map.
+            map.entities.clear();
+
+            //Get the users query and geocode it.
+            var query = document.getElementById('searchTbx').value;
+            geocodeQuery(query);
+        }
+    }
+
+    function geocodeQuery(query) {
+        var searchRequest = {
+            where: query,
+            callback: function (r) {
+                if (r && r.results && r.results.length > 0) { console.log(r);
+                    var pin, pins = [], locs = [], output = 'Results:<br/>';
+
+                    for (var i = 0; i < r.results.length; i++) {
+                        //Create a pushpin for each result. 
+                        pin = new Microsoft.Maps.Pushpin(r.results[i].location, {
+                            text: i + ''
+                        });
+                        pins.push(pin);
+                        locs.push(r.results[i].location);
+
+                        output += i + ') ' + r.results[i].name + '<br/>';
+                    }
+
+                    //Add the pins to the map
+                    map.entities.push(pins);
+
+                    //Display list of results
+                    document.getElementById('output').innerHTML = output;
+                    document.getElementById('output2').innerHTML = r.results[0].location;
+
+
+                    //Determine a bounding box to best view the results.
+                    var bounds;
+
+                    if (r.results.length == 1) {
+                        bounds = r.results[0].bestView;
+                    } else {
+                        //Use the locations from the results to calculate a bounding box.
+                        bounds = Microsoft.Maps.LocationRect.fromLocations(locs);
+                    }
+
+                    map.setView({ bounds: bounds });
+                }
+            },
+            errorCallback: function (e) {
+                //If there is an error, alert the user about it.
+                alert("No results found.");
+            }
+        };
+
+        //Make the geocode request.
+        searchManager.geocode(searchRequest);
+          
+    }
+   function GetDirections(){
+var query2 = document.getElementById('searchTbx2').value;
+var query3 = document.getElementById('searchTbx3').value;
+          Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+                //Create an instance of the directions manager.
+                directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
+
+                //Create waypoints to route between.
+                var seattleWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: query2  });
+                directionsManager.addWaypoint(seattleWaypoint);
+
+                var workWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: query3 });
+                directionsManager.addWaypoint(workWaypoint);
+
+                //Specify the element in which the itinerary will be rendered.
+                directionsManager.setRenderOptions({ itineraryContainer: '#directionsItinerary' });
+
+                //Calculate directions.
+                directionsManager.calculateDirections();
+            });}
+    </script>
+</head>
+<body>
+    <input id='searchTbx' type='text'/>  
+    <input type='button' value='Get Coordinates' onclick='Search()'/>
+  
+    <div id='output' style="margin-left:10px;float:left;"></div> 
+    <br/>  
+    <br/>
+      <div id='output2' style="margin-left:10px;float:left;"></div>
+  <div id="myMap" style="position:relative;width:600px;height:400px;float:left;"></div>
+    <br/>    <br/>    <br/>
+    <input id='searchTbx2' type='text'/>
+    <input id='searchTbx3' type='text'/>
+
+    <input type='button' value='Get Directions' onclick='GetDirections()'/>
+
+    <br/>
+    
+
+   <div id='directionsItinerary'></div> 
+</body>
+</html>

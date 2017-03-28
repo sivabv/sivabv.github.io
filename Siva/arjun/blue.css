@@ -1,0 +1,42 @@
+.section-title:before {
+	border-color: #FFB127 transparent transparent transparent;
+}
+.section-title:after, em, .highlight, nav li a:hover, .portfolio-full .registred-tags a:hover, .testimonials {
+	background: #FFB127;
+}
+.social-icons span:hover, .colored, a {
+	color: #FFB127;
+}
+
+.bg-color1 {
+	background: #FFB127 !important;
+}
+.bg-color2 {
+	background: #FFB127 !important;
+}
+.bg-color3 {
+	background: #FFB127 !important;
+}
+.bg-color4 {
+	background: #FFB127 !important;
+}
+
+.border-color1 {
+	border-color: #FFB127 !important;
+}
+.border-color1 {
+	border-color: #FFB127 !important;
+}
+.border-color1 {
+	border-color: #FFB127 !important;
+}
+.border-color1 {
+	border-color: #FFB127 !important;
+}
+
+
+
+
+
+
+

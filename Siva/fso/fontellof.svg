@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="stackoverflow" unicode="&#xe800;" d="m0-150l0 417l76-1l-3-335l501 0l0 334l79 0l0-415l-653 0z m123 219l392 0l0-83l-392 0l0 83z m1 65l8 85l393-38l-8-85z m21 173l23 82l380-107l-24-82z m71 201l44 73l338-204l-45-73z m167 205l69 50l230-321l-70-50z m252 123l84 14l65-389l-84-14z" horiz-adv-x="784" />
+</font>
+</defs>
+</svg>

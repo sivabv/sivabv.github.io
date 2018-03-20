@@ -309,8 +309,6 @@ footer span.octocat {
 /* content */
 
 body {
-  background: #ece4d8;
-  font: normal normal 30px/1.5 Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif;
   color: #544943;
   -webkit-font-smoothing: antialiased;
 }
@@ -356,8 +354,8 @@ ul {
 }
 
 ul li {
-  padding-left: 20px;
-  background: transparent url(../images/chevron-2x.png) left 15px no-repeat;
+  /* padding-left: 20px; */
+  /* background: transparent url(../images/chevron-2x.png) left 15px no-repeat; */
 }
 
 blockquote {

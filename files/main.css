@@ -716,3 +716,28 @@ li.dribbble {
         page-break-after: avoid;
     }
 }
+
+@media only screen and (max-width: 768px) {
+  .container.main-section {
+      margin-top: 150px;
+  }
+  
+  h2.sub-head {
+      max-width: 50%;
+  }
+  
+  .twelve-col {
+      background-size: auto !important;
+      color: #fff;
+      background: url(./images/giphy.gif) no-repeat center center;
+      background-size: 100%;
+      padding: 0px;
+      padding-left: 10px;
+  }
+  
+  .header {
+      height: auto;
+  }
+  }
+  
+  

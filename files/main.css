@@ -507,7 +507,7 @@ li.dribbble {
 
 .nav-tabs > li {
   float: left;
-  margin-bottom: -2px;
+  /* margin-bottom: -2px; */
 }
 
 .nav-tabs > li > a {

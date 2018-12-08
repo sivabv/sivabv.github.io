@@ -379,3 +379,5 @@
 	};
 	
 })( jQuery );
+$('#titre').arctext({radius: 150})
+$('#titre2').arctext({radius: 150, dir: -1})

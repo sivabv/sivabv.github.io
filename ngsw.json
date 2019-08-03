@@ -1,0 +1,71 @@
+{
+  "configVersion": 1,
+  "index": "https://sivabv.github.io/pwafour/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sivabv.github.io/pwafour/favicon.ico",
+        "https://sivabv.github.io/pwafour/index.html",
+        "https://sivabv.github.io/pwafour/main.4190ae19742113174207.js",
+        "https://sivabv.github.io/pwafour/polyfills.7a0e6866a34e280f48e7.js",
+        "https://sivabv.github.io/pwafour/runtime.a66f828dca56eeb90e02.js",
+        "https://sivabv.github.io/pwafour/styles.a662bd275e1e0e2e0f2b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://sivabv.github.io/pwafour/assets/icons/icon-128x128.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-144x144.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-152x152.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-192x192.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-384x384.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-512x512.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-72x72.png",
+        "https://sivabv.github.io/pwafour/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://sivabv.github.io/pwafour/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://sivabv.github.io/pwafour/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://sivabv.github.io/pwafour/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://sivabv.github.io/pwafour/index.html": "b78b10c558546b99dcefb9f6b9ba5c49ddcc7fd2",
+    "https://sivabv.github.io/pwafour/main.4190ae19742113174207.js": "0bccba8290e76c3372e1ff4db497abaf6f94de94",
+    "https://sivabv.github.io/pwafour/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
+    "https://sivabv.github.io/pwafour/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://sivabv.github.io/pwafour/styles.a662bd275e1e0e2e0f2b.css": "4ca6657a8f5ed9a069911b3667548efc3249c826"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

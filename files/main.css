@@ -317,9 +317,7 @@ li.dribbble {
   position: fixed;
   z-index: 100;
 }
-body{
-margin:auto
-}
+
 .header-stripe {
   height: 4px;
   width: 100%;

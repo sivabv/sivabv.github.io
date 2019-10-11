@@ -9,11 +9,6 @@ A simple PWA demo that displays the text "Hello, World!" utilizing an app manife
 
 I've also written a tutorial to go along with the code. Read it on Medium:
 
-https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605
-
-## Demo
-
-https://jamesjohnson280.github.io/hello-pwa/
 
 ## Browser Compatibility
 

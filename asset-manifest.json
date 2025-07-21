@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ai-blog-generator-app/static/css/main.6c31d734.css",
+    "main.js": "/ai-blog-generator-app/static/js/main.686f343e.js",
+    "static/js/453.5194f393.chunk.js": "/ai-blog-generator-app/static/js/453.5194f393.chunk.js",
+    "index.html": "/ai-blog-generator-app/index.html",
+    "main.6c31d734.css.map": "/ai-blog-generator-app/static/css/main.6c31d734.css.map",
+    "main.686f343e.js.map": "/ai-blog-generator-app/static/js/main.686f343e.js.map",
+    "453.5194f393.chunk.js.map": "/ai-blog-generator-app/static/js/453.5194f393.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c31d734.css",
+    "static/js/main.686f343e.js"
+  ]
+}
